@@ -1,0 +1,77 @@
+body {
+    background:rosybrown;
+    font-family: "Arialblack", "Lucida Sans", Arial, Sans-serif;
+}
+#juego {
+    background: url(piedras.jpg) 0 0 no-repeat;
+    padding: 0;
+    width: 800px;
+    min-height: 84px;
+    margin: 1em auto;
+}
+
+#juego h1{
+    font-size: 23pt;
+    text-align: right;
+    margin: 0em;
+    color: black;
+}
+
+
+#piedra,
+#papel,
+#tijera{
+    width: 30px;
+    height: 70px;
+    border-radius:50%;
+    margin: 50;
+    border: 1px solid rgba(90, 114, 141, 0);
+    padding: 0;
+    display:inline-block;
+    position:relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#piedra:hover,
+#papel:hover,
+#tijera:hover{
+    background: brown;
+}
+#piedra {
+    margin: 0em 0 0 3em;
+}
+
+#papel {
+    margin: 0em 0 0 6em;
+}
+#tijera {
+    margin: 0em 0 0 5.5em;
+}
+#efecto {
+    position: absolute;
+    background: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    transition: all 0.1s;
+   
+}
+
+#efecto h1 {
+    text-align: center;
+    font-size: 5em;
+    color: green;
+    margin: 2em 0 0;
+    padding: 0;
+    line-height: 1em;
+}
+#efecto h3 {
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    color: red;
+}
